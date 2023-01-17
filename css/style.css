@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    height:100vh;
+    display:grid;
+    place-items:center;
+    background-color:#ff7a00;
+  }
+  
+  .text{
+    margin:0;
+    font-family:"Arial Black";
+    font-size:100px;
+    color:#fff;
+    text-shadow:1px 1px #dedede,
+      -2px 2px #dedede,
+      -3px 3px #dedede,
+      -4px 4px #dedede,
+      -5px 5px #dedede,
+      -6px 6px #dedede,
+      -7px 7px #dedede,
+      -8px 8px #dedede,
+      -9px 9px #dedede,
+      -10px 10px #dedede,
+      -12px 12px 25px rgba(0,0,0,0.5);
+  }
