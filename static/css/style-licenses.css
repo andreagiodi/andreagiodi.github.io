@@ -171,7 +171,7 @@ body {
   .licenses-content {
     display: flex;
     gap: 10px;
-    padding-top: 50px;
+    padding-top: 50px
   }
 
   .rightbar-container {
@@ -193,7 +193,7 @@ body {
       
     }
     .licenses-content {
-        display: block;
+        display: flex;
     }
     #deskstop-title {
         visibility: hidden;
@@ -201,6 +201,21 @@ body {
     #subtitle {
         padding-top: 30px;
     }
+}
+
+/* Media query per schermi con larghezza massima di 768px (tipicamente dispositivi mobili) */
+@media (max-width: 768px) {
+  .licenses-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Aggiungi uno spazio tra i box delle licenze */
+      justify-content: center; /* Allinea i box al centro */
+  }
+
+  .license-card {
+      width: calc(50% - 20px); /* Occupa il 50% della larghezza con uno spazio di 20px tra i box */
+      margin: 10px; /* Aggiungi un margine uniforme intorno ai box delle licenze */
+  }
 }
 
 
