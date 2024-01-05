@@ -7,11 +7,19 @@
 
   .home-header h1 {
     font-size: 36px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
   }
 
   .home-header h5 {
     font-size: 20px;
     margin-top: 10px;
+  }
+
+  .home-header a {
+    margin: 5px;
   }
 
   .home-intro {
@@ -109,24 +117,34 @@ body {
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
+}
   
   .home-button:hover {
     background-color: #333;
     color: #f0f8ff;
   }
 
+a {
+  color: #f0f8ff;
+}
+
+.title {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
 
 
 /* Other resolutions rules */
 
-@media (max-width: 1080px) , (min-width: 1920px) {
-    .home-intro {
-        width: 60%;
-    }
-    .home-intro p {
-        font-size: 18px;
-        line-height: 1.6;
-      
-    }
+@media (min-width: 1081px) and (max-width: 1919px) {
+  .home-intro {
+      width: 60%;
+  }
+  .home-intro p {
+      font-size: 18px;
+      line-height: 1.6;
+  }
 }
+

@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(52, 67, 78);
+    font-family: 'Sono', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.article-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article-header h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.article-date {
+    font-size: 16px;
+    color: #666;
+}
+
+.article-body {
+    line-height: 1.6;
+}
+
+.rightbar-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.home-button {
+    background-color: #f0f8ff;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #333;
+    color: #f0f8ff;
+}
