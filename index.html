@@ -1,70 +1,72 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" data-theme="wireframe">
 <head>
-  <title>My Portfolio - Andrea Giodice</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/style-home.css">
-  <script src="script.js"></script>
-  <link rel="icon" href="/static/MILK.jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Giodice</title>
+    <!-- Import Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Import DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.2.0/dist/full.css" rel="stylesheet">
 </head>
-
-<body>
-  <div class="home-header">
-    <div class="title">
-      <h1><a href="whoiam.html"><u>My.Self</u></a> | <a href="blog.html"><u>My.Blog</u></a></h1>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Hero Section -->
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Hi, I'm Andrea Giodice</h1>
+                <p class="py-6">
+                    A junior full stack developer with a passion for building web applications.
+                </p>
+                <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">
+                    &downarrow; Scroll down &downarrow;
+                </button>
+            </div>
+        </div>
     </div>
     
-    <!-- <h5>⬇</h5> -->
-    <!-- <a href="whoiam.html" class="home-button">Who I Am</a> -->
-  </div>
-
-  <div class="home-intro chat-text">
-    <p>Hello! My name is <b>Andrea Giodice</b></p>
-    <p></p>
-    <p>Welcome to my Personal Website</p>
-    <p></p>
-    <p>I invite you to see my sections right below!</p>
-    <p></p>
-    <p>(Also if you want you can check out <a href="blog.html">my blog</a>!)</p>
-  </div>
-  <div style="text-align: center; color: aliceblue; font-size: 50px; padding-top: 30px;"> 
-    ⬇
-  </div>
-  
-  <div class="home-portfolio">
-    <div class="portfolio-item">
-      <div class="item-title">My Blog📒</div>
-      <div class="item-description">
-        Explore my blog where I share my experiences in coding or projects that I will pursue throughout the year, so having an overview of my movements and thoughts going through my mind.
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-      <a href="blog.html" class="item-button">View More</a>
-    </div>
-      
-    <div class="portfolio-item">
-      <div class="item-title">My Certifications📜</div>
-      <div class="item-description">Discover my certified developer licenses from renowned companies like Google and Valve, showcasing my dedication to Web Programming and Software Development. Proficient in Python, C#, JavaScript, HTML, CSS and much more, I commit to crafting seamless user experiences across a variety of projects.</div>
-      <a href="licenses.html" class="item-button">View More</a>
-  </div>
-  <div class="portfolio-item">
-      <div class="item-title">My Projects📁</div>
-      <div class="item-description">Explore a collection of my diverse projects that reflect my proficiency in both front-end and back-end development. As a Full Stack Developer, I create websites, mobile applications, and software solutions that merge creativity and technology.</div>
-      <a href="projects.html" class="item-button">View More</a>
-  </div>
-  <div class="portfolio-item">
-      <div class="item-title">My Github Workspaces📋</div>
-      <div class="item-description">Feel free to explore my GitHub repositories where I showcase my coding journey and share my projects. From open-source collaborations to personal experiments, you'll find a diverse array of coding endeavors that reflect my passion for development.</div>
-      <a href="https://github.com/andreagiodi" class="item-button">View More</a>
-  </div>
-  
+    <!-- Projects Section -->
+    <section id="projects" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
+                <!-- Project 1 -->
+                <div class="card shadow-lg p-6 bg-white flex flex-col">
+                    <div class="flex items-center mb-4">
+                        <img src="/static/images/LOGO.png" alt="Project 1 Logo" class="w-12 h-12 mr-4">
+                        <h3 class="text-2xl font-semibold">Pagerl</h3>
+                    </div>
+                    <p class="mb-4">
+                        A web application that allows users to create and share their pages with others.
+                    </p>
+                    <a href="#" class="btn btn-secondary mt-auto">Visit Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="card shadow-lg p-6 bg-white flex flex-col">
+                    <div class="flex items-center mb-4">
+                        <img src="/static/images/FeatureYardLogo.png" alt="Project 2 Logo" class="w-12 h-12 mr-4">
+                        <h3 class="text-2xl font-semibold">FeatureYard</h3>
+                    </div>
+                    <p class="mb-4">
+                        A web application that allows users to suggest and vote on new features for existing products.
+                    </p>
+                    <a href="#" class="btn btn-secondary mt-auto">Visit Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
     
-  </div>
+    <!-- Contact Section -->
+    <section class="py-12 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Contact Me</h2>
+            <p class="mb-8">If you want to know more about me or my projects, feel free to contact me through social media or send an email.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/andrea-giodice-3941421ba/" class="btn btn-primary">LinkedIn</a>
+                <a href="https://github.com/andreagiodi" class="btn btn-primary">GitHub</a>
+                <a href="mailto:andrea.giodice5@gmail.com" class="btn btn-primary">Email</a>
+            </div>
+        </div>
+    </section>
 </body>
-
 </html>
