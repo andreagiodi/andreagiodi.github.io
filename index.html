@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="wireframe">
+<html lang="en" data-theme="bumblebee">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,56 +8,111 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Import DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.2.0/dist/full.css" rel="stylesheet">
+    <style>
+        .card {
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-900 text-gray-200">
     <!-- Hero Section -->
-    <div class="hero bg-base-200 min-h-screen">
-        <div class="hero-content text-center">
-            <div class="max-w-md">
-                <h1 class="text-5xl font-bold">Hi, I'm Andrea Giodice</h1>
-                <p class="py-6">
-                    A junior full stack developer with a passion for building web applications.
-                </p>
-                <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">
-                    &downarrow; Scroll down &downarrow;
-                </button>
-            </div>
+    <section class="min-h-screen flex flex-col justify-center items-center text-center bg-gray-800">
+        <h1 class="text-5xl font-bold mb-4">Hi, I'm Andrea Giodice</h1>
+        <p class="text-xl mb-8">A junior full stack developer with a passion for building web applications.</p>
+        <button class="btn btn-primary" onclick="document.getElementById('speak').scrollIntoView({ behavior: 'smooth' });">
+            &downarrow; Scroll down &downarrow;
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12 bg-gray-900 text-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">About Me</h2>
+            <p class="text-lg leading-relaxed mb-8">
+                I'm passionate about sharing knowledge and meeting new people. I've had the opportunity to share ideas at various events around the globe.
+            </p>
         </div>
-    </div>
-    
-    <!-- Projects Section -->
-    <section id="projects" class="py-12">
+    </section>
+
+    <!-- Speak Section -->
+    <section id="speak" class="py-12 bg-gray-900 text-gray-200">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
-            <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
-                <!-- Project 1 -->
-                <div class="card shadow-lg p-6 bg-white flex flex-col">
-                    <div class="flex items-center mb-4">
-                        <img src="/static/images/LOGO.png" alt="Project 1 Logo" class="w-12 h-12 mr-4">
-                        <h3 class="text-2xl font-semibold">Pagerl</h3>
+            <h2 class="text-4xl font-bold mb-8 text-center">My Education</h2>
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- ITIS Galvani Card -->
+                <div class="card bg-gray-800 p-6 flex flex-col items-center text-center">
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-gray-700 rounded-full">
+                        <span class="text-2xl">🏫</span>
                     </div>
-                    <p class="mb-4">
-                        A web application that allows users to create and share their pages with others.
+                    <h3 class="text-xl font-semibold mb-2">ITIS Galvani of Milan</h3>
+                    <p class="text-gray-400">
+                        IT and Telecommunications
                     </p>
-                    <a href="https://pagerl.com" class="btn btn-secondary mt-auto">Visit Project</a>
+                    <p class="text-gray-400">2019 - 2024</p>
                 </div>
-                <!-- Project 2 -->
-                <div class="card shadow-lg p-6 bg-white flex flex-col">
-                    <div class="flex items-center mb-4">
-                        <img src="/static/images/FeatureYardLogo.png" alt="Project 2 Logo" class="w-12 h-12 mr-4">
-                        <h3 class="text-2xl font-semibold">FeatureYard</h3>
+                <!-- ITS Angelo Rizzoli Card -->
+                <div class="card bg-gray-800 p-6 flex flex-col items-center text-center">
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-gray-700 rounded-full">
+                        <span class="text-2xl">💻</span>
                     </div>
-                    <p class="mb-4">
-                        A web application that allows users to suggest and vote on new features for existing products.
-                    </p>
-                    <a href="https://featureyard.com" class="btn btn-secondary mt-auto">Visit Project</a>
+                    <h3 class="text-xl font-semibold mb-2">ITS Angelo Rizzoli</h3>
+                    <p class="text-gray-400">Software Architect Specialist</p>
+                    <p class="text-gray-400">2024 - Now</p>
                 </div>
             </div>
         </div>
     </section>
     
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-gray-900 text-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">My Projects</h2>
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Project Cards -->
+                <div class="card shadow-lg p-6 bg-gray-800 flex flex-col items-center text-center">
+                    <img src="/static/images/LOGO.png" alt="Pagerl Logo" class="w-16 h-16 mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Pagerl</h3>
+                    <div class="flex flex-wrap justify-center gap-2 mb-4">
+                        <span class="badge badge-info">Angular</span>
+                        <span class="badge badge-success">Tailwind</span>
+                        <span class="badge badge-warning">Python</span>
+                        <span class="badge badge-error">MongoDB</span>
+                    </div>
+                    <p class="mb-4">
+                        A web application that allows users to create and share their pages with others.
+                        Stripe payments are integrated.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://pagerl.com" class="btn btn-primary">Visit Project</a>
+                        <a href="https://github.com/andreagiodi/pagerl" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="card shadow-lg p-6 bg-gray-800 flex flex-col items-center text-center">
+                    <img src="/static/images/FeatureYardLogo.png" alt="FeatureYard Logo" class="w-16 h-16 mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">FeatureYard</h3>
+                    <div class="flex flex-wrap justify-center gap-2 mb-4">
+                        <span class="badge badge-info">Angular</span>
+                        <span class="badge badge-success">Tailwind</span>
+                        <span class="badge badge-warning">Python</span>
+                        <span class="badge badge-error">MongoDB</span>
+                    </div>
+                    <p class="mb-4">
+                        A web application that allows users to suggest and vote on new features for existing products.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://featureyard.com" class="btn btn-primary">Visit Project</a>
+                        <a href="https://github.com/andreagiodi/featureyard" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section class="py-12 bg-gray-800 text-white">
+    <section id="contact" class="py-12 bg-gray-800 text-white">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold mb-8">Contact Me</h2>
             <p class="mb-8">If you want to know more about me or my projects, feel free to contact me through social media or send an email.</p>
