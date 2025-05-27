@@ -7,7 +7,9 @@
     <title>Andrea Giodice</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- icon -->
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg" type="image/x-icon">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
+        type="image/x-icon">
 </head>
 
 <body class="bg-gray-900 text-white font-mono flex items-center justify-center min-h-screen">
@@ -18,7 +20,7 @@
                 <!-- <button class="bg-gray-800 p-2 rounded">🌙</button> -->
                 <a href="/about.html" class="ml-4">About</a>
                 <a href="/about.html" class="ml-4">Contact</a>
-                
+
             </div>
         </header>
 
@@ -32,43 +34,21 @@
 
             <!-- Projects Table -->
             <div class="overflow-x-auto">
-                <h1 class="text-2xl font-bold">Projects</h1>    
-                <table class="table-auto w-full text-left text-sm lg:text-base mt-3">
-                    <thead>
-                        <tr>
-                            <th class="text-gray-400">date</th>
-                            <th class="text-gray-400">title</th>
-                            <th class="text-gray-400 text-right">Note</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="py-2 text-gray-500">2025</td>
-                            <td class="py-2"><a href="https://tablio.app" class="hover:underline">Tablio.app</a></td>
-                            <td class="py-2 text-right text-gray-500">Tool for restaurants</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 text-gray-500">2025</td>
-                            <td class="py-2"><a href="https://pingmaster.app" class="hover:underline">PingMaster.app</a></td>
-                            <td class="py-2 text-right text-gray-500">Free endpoint ping tool</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 text-gray-500">2024</td>
-                            <td class="py-2"><a href="https//countwe.com" class="hover:underline">CountWe.com</a></td>
-                            <td class="py-2 text-right text-gray-500">Simple countdown tool</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 text-gray-500">2024</td>
-                            <td class="py-2"><a href="https://featureyard.com" class="hover:underline">FeatureYard.com - Discontinued</a></td>
-                            <td class="py-2 text-right text-gray-500">Free feedback tool</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 text-gray-500">2023</td>
-                            <td class="py-2"><a href="https://pagerl.com" class="hover:underline">Pagerl.com - Discontinued</a></td>
-                            <td class="py-2 text-right text-gray-500">Portfolio page builder</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h1 class="text-2xl font-bold">Projects <a href="/projects.html" class="text-sm">View All</a></h1>
+                <main class="w-full grid grid-cols-3 gap-10 max-w-6xl mx-auto mt-6">
+                    <!-- Card 1 -->
+                    <a href="https://tablio.app" class="overflow-hidden flex items-center justify-center transition-transform hover:scale-95 cursor-pointer">
+                        <img src="./static/images/tablio.png" alt="Tablio" class="object-cover w-full h-full" />
+                    </a>
+                    <!-- Card 2 -->
+                    <a href="https://pingmaster.app" class="overflow-hidden flex items-center justify-center transition-transform hover:scale-95 cursor-pointer">
+                        <img src="./static/images/pingmaster.png" alt="pingmaster" class="object-cover w-full h-full" />
+                    </a>
+                    <!-- Card 3 -->
+                    <a href="https://countwe.com" class="overflow-hidden flex items-center justify-center transition-transform hover:scale-95 cursor-pointer">
+                        <img src="./static/images/countwe2.png" alt="countwe" class="object-cover w-full h-full" />
+                    </a>
+                </main>
             </div>
 
             <!-- Education Table -->
@@ -112,14 +92,15 @@
                     <tbody>
                         <tr>
                             <td class="py-2"><a href="mailto:andrea.giodice5@gmail.com" class="hover:underline">
-                                andrea.giodice5@gmail.com
-                            </a></td>
+                                    andrea.giodice5@gmail.com
+                                </a></td>
                             <td class="py-2 text-right text-gray-500">I'll reply within 24 hours 📧</td>
                         </tr>
                         <tr>
-                            <td class="py-2"><a href="https://www.linkedin.com/in/andrea-giodice-3941421ba/" class="hover:underline">
-                                LinkedIn
-                            </a></td>
+                            <td class="py-2"><a href="https://www.linkedin.com/in/andrea-giodice-3941421ba/"
+                                    class="hover:underline">
+                                    LinkedIn
+                                </a></td>
                             <td class="py-2 text-right text-gray-500">I accept all connections 🤝</td>
                         </tr>
                     </tbody>
